@@ -1,0 +1,29 @@
+{
+  "name": "movieStub",
+  "description": "Book Movie Tickets online",
+  "main": "index.js",
+  "authors": [
+    "Evanson Mwangi"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Movie",
+    "Movie",
+    "Tickets",
+    "Online",
+    "Movie"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "^1.5.0",
+    "bootstrap": "^3.3.6"
+  }
+}

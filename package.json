@@ -1,0 +1,25 @@
+{
+  "name": "movieStub",
+  "version": "0.0.1",
+  "description": "Book Movie Tickets online",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error:no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devmars"
+  },
+  "keywords": [
+    "Movie",
+    "Movie",
+    "Tickets",
+    "Online",
+    "Movie"
+  ],
+  "author": "Evanson Mwangi",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.13.4"
+  }
+}
