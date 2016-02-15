@@ -1,0 +1,17 @@
+<a ng-click="back()" class="btn btn-info pull-right" href="javascript:">Back</a>
+<div ng-show="currMovie">
+    <h3>{{currMovie.name}}</h3>
+    <span ng-repeat="i in getCount(currMovie.rating) track by $index" class="glyphicon glyphicon-star"></span>
+    <hr/>
+    <div class="row">
+        <div class="col-md-8">
+            <form role="form" name="bookTickets" ng-submit="processForm()">
+                <div class="form-group">
+                    <label for="qty">Quantity</label>
+                    <input type="text" ng-model="formData.qty" name="qty" id="qty" ng-pattern="onlyNumbers"
+                           placeholder="TicketsQuantity" value="1" ng-model="qty" required>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

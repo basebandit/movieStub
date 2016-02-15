@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" data-ng-app="">
+<html lang="en" ng-app="movieStubApp">
 <head>
     <meta charset="UTF-8">
     <title>Movie Stub - Book Movie Tickets Online</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
     <script type="text/javascript" src="js/lib/angular.min.js"></script>
+    <script type="text/javascript" src="js/lib/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/lib/angular-resource.min.js"></script>
     <script type="text/javascript" src="js/lib/jquery.min.js"></script>
     <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/controller/app.js"></script>
+    <script type="text/javascript" src="js/router/router.js"></script>
+    <script type="text/javascript" src="js/service/services.js"></script>
+
 </head>
-<body class="container">
-<h1>Movie Stub</h1><h4>Book Movie Tickets Online</h4>
-<br/>
-<!--binds the input value to the model movieName-->
-<input class="form-control" placeholder="Enter your favorite movie" data-ng-model="movieName"/>
-<!--displays the input value as retrieved from the angular directive movieName-->
-<h1 data-ng-show="movieName">My favorite movie is {{movieName}}!!</h1>
+<body class="container" ng-controller="movieStubController">
+<div ng-include src="headerSrc"></div>
+<div ng-view=""></div>
 </body>
 </html>
